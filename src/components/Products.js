@@ -1,5 +1,7 @@
 import React from "react";
 import Product from "./Product";
+import { useDispatch, useSelector } from "react-redux";
+
 const DUMMY_PRODUCTS = [
   {
     id: 1,
@@ -38,6 +40,7 @@ const DUMMY_PRODUCTS = [
   },
 ];
 const Products = () => {
+
   return (
     <div>
       <ul className="products-container">
